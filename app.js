@@ -13,6 +13,14 @@ var db = firebase.firestore();
 
   var objects =[] ;
 
+  class users{
+constructor(first,last,born){
+    this.first=first;
+    this.last=last;
+    this.born=born;
+  }
+}
+
 // const data=document.querySelector("#data");
 
   db.collection("testing")
